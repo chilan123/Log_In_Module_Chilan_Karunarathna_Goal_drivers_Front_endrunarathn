@@ -1,0 +1,177 @@
+/* Write your CSS code here */
+.login-form-container {
+  display: flex; /* This sets the display property of the container to flex, which enables flexible layout options for the container's children elements.*/
+  flex-direction: column; /*  This sets the direction of the flex layout to vertical, so that the children elements are stacked vertically inside the container.*/
+  justify-content: center; /*  This centers the children elements vertically within the container.*/
+  align-items: center; /*  This centers the children elements horizontally within the container.*/
+  height: 700px;
+  margin-left: auto; /* This adds a margin to the left side of the container, pushing it towards the center of the screen.*/
+  max-width: 50%; /*  This sets the maximum width of the container to 50% of the viewport width, which means it won't expand to fill the entire screen.*/
+}
+
+
+@media screen and (max-width: 767px) {
+  .registration-form-container {
+    /*when the screen size is smaller than 767px. This is called a media query.*/
+    flex-direction: column; /* This sets the direction of the flex layout to vertical, so that the children elements are stacked vertically inside the container. */
+    justify-content: start; /* This aligns the children elements to the top of the container. */
+    padding-top: 50px; /* This adds 50 pixels of padding to the top of the container. */
+  }
+}
+
+
+
+.comanylogo {
+  width: 3cm;
+  height: auto;
+  margin-left: 40px;
+  margin-top: 1px;
+}
+
+
+.form-title {
+  font-size: 30px; /* This sets the font size of the text to 48 pixels. */
+  color: #00b4fb; /* This sets the color of the text to a shade of blue. */
+  
+}
+
+@media screen and (max-width: 767px) {
+  .form-title {
+    font-size: 36px;
+  }
+}
+
+
+.view-containerlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+ 
+  padding: 10px;
+  border-radius: 16px;
+  height: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Add box-shadow property here */
+
+/*The @media rule is used to apply styles to the container based on the screen size. In this case, the styles within the @media rule will be applied only when the screen width is at least 768 pixels.
+*/}
+
+
+@media screen and (min-width: 768px) {
+  .view-containerlog {
+    max-width: 350px;
+    max-height: 7000px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16); /* Update box-shadow property here */
+    padding: 48px 64px 48px 64px;
+  }
+}
+
+.form-containers { /* i change it becoause it effcect for registartion form*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  
+}
+
+.form-image {
+  width: 4cm;
+  height: 4cm;
+}
+
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: #475569;
+}
+
+.name-input-field {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  border: 1px solid #cbd2d9;
+ 
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+
+
+.submit-button {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-color: #12c2fc;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 10cm;
+  height: 1cm;
+}
+
+
+@media screen and (max-width: 768px) {
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.error-field {
+  border: 1px solid #dc0028;
+  background-color: #fef2f4;
+}
+
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+}
+
+.image{
+  width: 300cm;
+
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+  
+}
+
+.remember-me-container {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.remember-me-container input {
+  margin-right: 9px;
+}
